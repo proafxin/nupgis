@@ -4,9 +4,7 @@ from nupgis.ops import distance
 from nupgis.validation import check_point_structure
 
 
-def vertex_cluster_reduction(
-    points: list[np.ndarray], epsilon: float
-) -> list[np.ndarray]:
+def vertex_cluster_reduction(points: list[np.ndarray], epsilon: float) -> list[np.ndarray]:
     if not check_point_structure(points=points):
         raise ValueError("Points are invalid. Ensure all points are 2d")
 
