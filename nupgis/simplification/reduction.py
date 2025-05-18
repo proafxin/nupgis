@@ -1,12 +1,13 @@
 import numpy as np
 
 from nupgis.ops import distance
-from nupgis.validation import check_point_structure
+from nupgis.validation import validate_2d_points
 
 
-def vertex_cluster_reduction(points: list[np.ndarray], epsilon: float) -> list[np.ndarray]:
-    if not check_point_structure(points=points):
-        raise ValueError("Points are invalid. Ensure all points are 2d")
+def vertex_cluster_reduction(
+    points: list[np.ndarray], epsilon: float
+) -> list[np.ndarray]:
+    validate_2d_points(points=points)
 
     start = points[0]
     reduced: list[np.ndarray] = [start]
