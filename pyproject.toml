@@ -1,6 +1,6 @@
 [project]
 name = "nupgis"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python library for GIS using numpy only."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,6 +13,10 @@ dev = [
     "coverage>=7.8.0",
     "mypy>=1.15.0",
     "pytest>=8.3.5",
+]
+docs = [
+    "furo>=2024.8.6",
+    "sphinx>=8.2.3",
 ]
 formatting = [
     "pre-commit>=4.2.0",
