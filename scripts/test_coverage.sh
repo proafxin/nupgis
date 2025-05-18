@@ -2,4 +2,4 @@
 
 uv run pytest .
 uv run coverage run --source=. -m pytest .
-uv run coverage report -m --fail-under=90
+uv run coverage report -m --fail-under=95
