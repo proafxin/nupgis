@@ -3,7 +3,7 @@ from typing import Sequence
 import numpy as np
 
 
-def validate_2d_polygon(points: Sequence[np.ndarray]) -> None:
+def validate_2d_points(points: Sequence[np.ndarray]) -> None:
     if not isinstance(points, Sequence):
         raise TypeError("Points must be a valid indexable `Sequence`")
 

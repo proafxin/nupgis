@@ -1,13 +1,11 @@
 import numpy as np
 
 from nupgis.ops import distance
-from nupgis.validation import validate_2d_polygon
+from nupgis.validation import validate_2d_points
 
 
-def vertex_cluster_reduction(
-    points: list[np.ndarray], epsilon: float
-) -> list[np.ndarray]:
-    validate_2d_polygon(points=points)
+def vertex_cluster_reduction(points: list[np.ndarray], epsilon: float) -> list[np.ndarray]:
+    validate_2d_points(points=points)
 
     start = points[0]
     reduced: list[np.ndarray] = [start]
