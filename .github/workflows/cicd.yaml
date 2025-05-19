@@ -30,8 +30,6 @@ jobs:
 
       - name: Run pipeline
         run: |
-          uv venv
-          uv sync --all-groups --all-extras
           bash ./pipeline.sh
           uv run coverage xml -o coverage.xml
 
