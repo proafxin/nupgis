@@ -11,4 +11,3 @@ NUmPyGIS documentation
    :caption: Contents:
 
    modules
-
