@@ -4,6 +4,7 @@ A Python library for GIS using numpy only.
 
 [![Build, Test and Publish Status](https://github.com/proafxin/nupgis/actions/workflows/cicd.yaml/badge.svg)](https://github.com/proafxin/nupgis/actions/workflows/cicd.yaml)
 ![Latest Package Release](https://img.shields.io/pypi/v/nupgis)
+[![Pre-commit Status](https://results.pre-commit.ci/badge/github/proafxin/nupgis/develop.svg)](https://results.pre-commit.ci/latest/github/proafxin/nupgis/develop)
 [![Code Coverage](https://codecov.io/gh/proafxin/nupgis/graph/badge.svg?token=FuDyB2nnA5)](https://codecov.io/gh/proafxin/nupgis)
 ![RTD Documentation](https://img.shields.io/readthedocs/nupgis)
 
