@@ -1,11 +1,11 @@
 [project]
 name = "nupgis"
-version = "0.1.4"
+version = "0.1.5"
 description = "NUmPyGIS. A Python library for GIS using numpy only."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "numpy>=2.2.5",
+    "numpy>=2.2.6",
 ]
 license = { file = "LICENSE" }
 authors = [{name="Masum Billal", email="billalmasum93@gmail.com"}]
