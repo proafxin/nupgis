@@ -3,9 +3,9 @@ from typing import Sequence
 import numpy as np
 
 
-def validate_2d_points(points: Sequence[np.ndarray]) -> None:
-    if not isinstance(points, Sequence):
-        raise TypeError("Points must be a valid indexable `Sequence`")
+def validate_2d_points(points: Sequence[np.ndarray] | np.ndarray) -> None:
+    if not isinstance(points, Sequence) and not isinstance(points, np.ndarray):
+        raise TypeError("Points must be a valid indexable sequence")
 
     if len(points) < 1:
         raise ValueError("Points cannot be empty")

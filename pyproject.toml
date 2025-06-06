@@ -1,6 +1,6 @@
 [project]
 name = "nupgis"
-version = "0.1.7"
+version = "0.1.8"
 description = "NUmPyGIS. A Python library for GIS using numpy only."
 readme = "README.md"
 requires-python = ">=3.11"
