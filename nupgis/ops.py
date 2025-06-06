@@ -1,6 +1,10 @@
 import numpy as np
 
 
+def hash_point(point: np.ndarray) -> int:
+    return hash(point.tobytes())
+
+
 def distance(x: np.ndarray, y: np.ndarray) -> float:
     if len(x) != len(y):
         raise ValueError("Points must have the same dimension")
